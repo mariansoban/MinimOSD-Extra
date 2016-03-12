@@ -88,7 +88,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>
 //#define ArduCAM328
 #define MinimOSD
 
-#define TELEMETRY_SPEED  57600  // How fast our MAVLink telemetry is coming to Serial port
+//#define TELEMETRY_SPEED  57600  // How fast our MAVLink telemetry is coming to Serial port
+// XXX [ms] telemetry speed 115200
+#define TELEMETRY_SPEED  115200  // How fast our MAVLink telemetry is coming to Serial port
 #define BOOTTIME         2000   // Time in milliseconds that we show boot loading bar and wait user input
 
 // Objects and Serial definitions
