@@ -1,0 +1,17 @@
+COPTER
+main:
+MinimOsd_Extra_Copter_Pre_release_Beta/MinimOsd_Extra_Copter_Pre_release_Beta.ino
+
+IDE version:
+f:\apps\arduino\arduino-1.0.5-r2\arduino.exe
+
+
+ADD NEW FLIGHT MODE:
+# MinimOsd_Extra_Copter_Pre_release_Beta/OSD_Panels.ino
+    // XXX [ms] brake mode for copter
+    else if (osd_mode == 17) mode_str = "brake"; //Brake
+	...
+
+# serial speed
+MinimOsd_Extra_Copter_Pre_release_Beta/MinimOsd_Extra_Copter_Pre_release_Beta.ino
+#define TELEMETRY_SPEED  115200
