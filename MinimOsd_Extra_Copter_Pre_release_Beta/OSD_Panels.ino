@@ -1027,10 +1027,16 @@ void panFlightMode(int first_col, int first_line){
     else if (osd_mode == 11) mode_str = "drif"; //Drift
     else if (osd_mode == 13) mode_str = "sprt"; //Sport
     //else if (osd_mode == 14) mode_str = "flip"; //Flip
-    //else if (osd_mode == 15) mode_str = "tune"; //Tune
+    else if (osd_mode == 15) mode_str = "tune"; //Tune
     else if (osd_mode == 16) mode_str = "phld"; //Position Hold (Earlier called Hybrid)
     // XXX [ms] brake mode for copter
     else if (osd_mode == 17) mode_str = "brake"; //Brake
+    else if (osd_mode == 18) mode_str = "throw"; //Throw
+    else if (osd_mode == 19) mode_str = "avoid"; //Avoid
+    else if (osd_mode == 20) mode_str = "gngps"; //Guided nogps
+    else if (osd_mode == 21) mode_str = "srtl"; //Smart RTL
+    else if (osd_mode == 22) mode_str = "fhld"; //Flow Hold
+    else if (osd_mode == 23) mode_str = "folw"; //Follow
     osd.printf("%c%s%c", 0x7F, mode_str, motor_armed * 0x86);
     osd.closePanel();
 }
