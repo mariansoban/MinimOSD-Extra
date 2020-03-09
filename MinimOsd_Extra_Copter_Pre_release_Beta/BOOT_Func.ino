@@ -16,20 +16,20 @@
 //  int waitTimer;
 //  byte barStep = 0;
 
-  // Write plain panel to let users know what to do
+// Write plain panel to let users know what to do
 //  panBoot(barX,barY);
 
 //  delay(500);    // To give small extra waittime to users
-//  Serial.flush(); 
-  
-  // Our main loop to wait input from user.  
+//  Serial.flush();
+
+// Our main loop to wait input from user.
 //  for(waitTimer = 0; waitTimer <= BOOTTIME; waitTimer++) {
 
-    // How often we update our progress bar is depending on modulo
+// How often we update our progress bar is depending on modulo
 //    if(waitTimer % (BOOTTIME / 8) == 0) {
 //      barStep++;
-      
-      // Update bar it self
+
+// Update bar it self
 //      osd.setPanel(barX + 12, barY);
 //      osd.openPanel();
 //      switch(barStep) {
@@ -66,9 +66,7 @@
 //      }
 //      osd.closePanel();
 //    }
-    
+
 //    delay(1);       // Minor delay to make sure that we stay here long enough
 //  }
 //}
-
-

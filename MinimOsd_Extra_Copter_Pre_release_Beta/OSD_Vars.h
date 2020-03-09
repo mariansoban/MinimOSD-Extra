@@ -3,7 +3,7 @@
 
 static float        max_home_distance = 0;
 static float        max_osd_airspeed = 0;
-static float        max_osd_groundspeed = 0; 
+static float        max_osd_groundspeed = 0;
 static float        max_osd_home_alt = 0;
 static float        max_osd_windspeed = 0;
 static float        nor_osd_windspeed = 0;
@@ -11,7 +11,7 @@ static float        vs = 0;
 
 static float tdistance = 0;
 static float ddistance = 0;
-static char strclear[]="\x20\x20\x20\x20\x20\x20\x20\x20";
+static char strclear[] = "\x20\x20\x20\x20\x20\x20\x20\x20";
 
 //static float	    nav_roll = 0; // Current desired roll in degrees
 //static float        nav_pitch = 0; // Current desired pitch in degrees
@@ -26,9 +26,9 @@ static float	    xtrack_error = 0; // Current crosstrack error on x-y plane in m
 static float        eff = 0; //Efficiency
 static uint16_t     eph = 0;
 
-static uint8_t      currentBasePanel=255; //0 - Normal OSD; 1 - Flight summary; 2 - No mavlink data (pre-set = 255 to force osd.clear() after boot screen
-static uint8_t      base_mode=0;
-static uint8_t      panel_auto_switch=0;
+static uint8_t      currentBasePanel = 255; //0 - Normal OSD; 1 - Flight summary; 2 - No mavlink data (pre-set = 255 to force osd.clear() after boot screen
+static uint8_t      base_mode = 0;
+static uint8_t      panel_auto_switch = 0;
 static bool         motor_armed = 0;
 static bool         last_armed_status = 0;
 static bool         ma = 0;
@@ -57,7 +57,7 @@ static float        converts = 0;
 static float        converth = 0;
 static uint8_t      overspeed = 0;
 static uint8_t      stall = 0;
-static uint8_t      battv = 0; //Battery warning voltage - units Volt *10 
+static uint8_t      battv = 0; //Battery warning voltage - units Volt *10
 static uint16_t      distconv = 0;
 //static int        battp = 0;
 
@@ -112,8 +112,8 @@ static uint16_t     off_course;
 static uint8_t      osd_got_home = 0;               // tels if got home position or not
 static float        osd_home_lat = 0;               // home latidude
 static float        osd_home_lon = 0;               // home longitude
-//static float        osd_home_alt = 0; 
-//static float        osd_alt_to_home = 0; 
+//static float        osd_home_alt = 0;
+//static float        osd_alt_to_home = 0;
 static long         osd_home_distance = 0;          // distance from home
 static uint8_t      osd_home_direction;             // Arrow direction pointing to home (1-16 to CW loop)
 
@@ -165,7 +165,7 @@ static byte     climbchar = 0;
 
 static float     convertt = 0;
 //Call sign variables
-static char         char_call[OSD_CALL_SIGN_TOTAL+1] = {0};
+static char         char_call[OSD_CALL_SIGN_TOTAL + 1] = {0};
 
 //MAVLink session control
 static boolean      mavbeat = 0;
@@ -177,14 +177,14 @@ static boolean      mavbeat = 0;
 static float        lastMAVBeat = 0;
 static boolean      waitingMAVBeats = 1;
 //static uint8_t      apm_mav_type;
-static uint8_t      apm_mav_system; 
+static uint8_t      apm_mav_system;
 static uint8_t      apm_mav_component;
 static boolean      enable_mav_request = 0;
 static boolean      blinker = 0;
 static boolean      one_sec_timer_switch = 0;
 
 static const uint8_t npanels = 2;
-static uint8_t panel = 0; 
+static uint8_t panel = 0;
 // Panel BIT registers
 byte panA_REG[npanels] = {0b00000000};
 byte panB_REG[npanels] = {0b00000000};
@@ -251,4 +251,3 @@ static uint8_t      osd_rssi = 0; //raw value from mavlink
 static int16_t      rssi = -99; // scaled value 0-100%
 static uint8_t      rssiraw_on = 0;
 static uint8_t      rssi_warn_level = 0;
-

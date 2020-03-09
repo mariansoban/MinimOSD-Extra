@@ -65,11 +65,11 @@
 
 //If PAL
 #ifdef isPAL
-  #define MAX7456_screen_size 480 //16x30
-  #define MAX7456_screen_rows 0x10
+#define MAX7456_screen_size 480 //16x30
+#define MAX7456_screen_rows 0x10
 #else
-  #define MAX7456_screen_size 390 //13x30
-  #define MAX7456_screen_rows 0x0D
+#define MAX7456_screen_size 390 //13x30
+#define MAX7456_screen_rows 0x0D
 #endif
 
 //------------------ the OSD class -----------------------------------------------
@@ -103,4 +103,3 @@ class OSD: public BetterStream
 };
 
 #endif
-
