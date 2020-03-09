@@ -1037,6 +1037,10 @@ void panFlightMode(int first_col, int first_line) {
   else if (osd_mode == 21) mode_str = "srtl"; //Smart RTL
   else if (osd_mode == 22) mode_str = "fhld"; //Flow Hold
   else if (osd_mode == 23) mode_str = "folw"; //Follow
+  else if (osd_mode == 24) mode_str = "zigzag"; //ZigZab
+  else if (osd_mode == 25) mode_str = "systemid";
+  else if (osd_mode == 26) mode_str = "autorotate"; //Autorotate
+
   osd.printf("%c%s%c", 0x7F, mode_str, motor_armed * 0x86);
   osd.closePanel();
 }
